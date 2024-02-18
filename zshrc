@@ -92,11 +92,4 @@ fi
 
 alias rsyncf="rsync -zhPa --safe-links"
 
-setopt nullglob
-ADDITIONAL_INIT_SCRIPTS=($HOME/.zshrc.d/*.zsh)
-unsetopt nullglob
-for init_script in $ADDITIONAL_INIT_SCRIPTS ; do
-    source $init_script
-done
-
 
